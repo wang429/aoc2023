@@ -1,11 +1,19 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 
-	"rsc.io/quote"
+	"github.com/wang429/aoc2023/day1"
 )
 
 func main() {
-	fmt.Println(quote.Go())
+	dayNumPtr := flag.Int("day", 0, "which day to run")
+	flag.Parse()
+	fmt.Println("Running day", *dayNumPtr)
+
+	switch *dayNumPtr {
+	case 1:
+		day1.Run()
+	}
 }

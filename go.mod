@@ -2,9 +2,8 @@ module github.com/wang429/aoc2023
 
 go 1.21.4
 
-require rsc.io/quote v1.5.2
+replace github.com/wang429/aoc2023/day1 => ./day1
 
-require (
-	golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c // indirect
-	rsc.io/sampler v1.3.0 // indirect
-)
+require github.com/wang429/aoc2023/day1 v0.0.0-00010101000000-000000000000
+
+require github.com/wang429/aoc2023/util v0.0.0-00010101000000-000000000000 // indirect
